@@ -1,3 +1,44 @@
+# Minimap2-SIMD – Accelerated Fork with AVX2/AVX512 Architecture Support
+
+This repository is a fork of [minimap2 - V2.28](https://github.com/lh3/minimap2/), extended and optimized to support **X86 AVX2/AVX512 architecture**.  
+
+---
+
+## What's New
+- Added SIMD support for AVX2/AVX512 instruction set
+- Optimized computational pipeline for faster execution
+- Improved compatibility with modern hardware
+
+---
+
+## Installation & Usage (Accelerated Version)
+
+### 1. Prerequisites
+In addition to the prerequisites listed in the baseline repository [Install](#install) & [Developers' Guide](#dguide), you will need:
+- GCC compiler with AVX2/AVX512 support. 
+- Hardware supporting AVX2/AVX512 SIMD instruction set.
+
+### 2. Installation
+```bash
+git clone https://github.com/criniguez/minimap2-avx
+cd minimap2-avx
+make all
+```
+
+### 3. Usage
+
+```bash
+minimap2 -t <num_threads> -a <reference_genome> <input_fastq/fasta>
+```
+  
+## Acknowledgments
+* Original work by Cristian Iñiguez [cristian.iniguez@bsc.es](mailto:cristian.iniguez@bsc.es) & Santiago Marco-Sola [santiago.marco@bsc.es](mailto:santiago.marco@bsc.es)
+* Supported by [BSC](https://www.bsc.es/) & [UPC](https://www.fib.upc.edu/en) - providing resources and technical guidance.
+
+
+## Original README
+*(Below is the original README content for reference.)*
+
 [![GitHub Downloads](https://img.shields.io/github/downloads/lh3/minimap2/total.svg?style=social&logo=github&label=Download)](https://github.com/lh3/minimap2/releases)
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/minimap2.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/minimap2)
 [![PyPI](https://img.shields.io/pypi/v/mappy.svg?style=flat)](https://pypi.python.org/pypi/mappy)
