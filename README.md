@@ -20,8 +20,8 @@ In addition to the prerequisites listed in the baseline repository [Install](#in
 
 ### 2. Installation
 ```bash
-git clone https://github.com/criniguez/minimap2-avx
-cd minimap2-avx
+git clone https://github.com/criniguez/minimap2-simd
+cd minimap2-simd
 make all
 ```
 
@@ -32,8 +32,8 @@ minimap2 -t <num_threads> -a <reference_genome> <input_fastq/fasta>
 ```
   
 ## Acknowledgments
-* Original work by Cristian Iñiguez [cristian.iniguez@bsc.es](mailto:cristian.iniguez@bsc.es) & Santiago Marco-Sola [santiago.marco@bsc.es](mailto:santiago.marco@bsc.es)
-* Supported by [BSC](https://www.bsc.es/) & [UPC](https://www.fib.upc.edu/en) - providing resources and technical guidance.
+* Original work by Cristian Iñiguez [cristian.iniguez@bsc.es](mailto:cristian.iniguez@bsc.es), Quim Aguado-Puig, Lorién López-Villellas, Christos Matzoros, Pablo Ibáñez, Jesús Alastruey-Benedé, Juan Carlos Moure, Santiago Marco-Sola [santiago.marco@bsc.es](mailto:santiago.marco@bsc.es) & Miquel Moreto. 
+* Supported by [BSC](https://www.bsc.es/), [UPC](https://www.fib.upc.edu/en) & [UNIZAR](https://www.unizar.es/) - providing resources and technical guidance.
 
 
 ## Original README
