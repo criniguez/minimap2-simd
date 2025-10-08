@@ -28,6 +28,10 @@ else				#if aarch64 is defined
 endif
 endif
 
+ifeq ($(sve),1)
+	CFLAGS += -march=armv8-a+sve
+endif
+
 ifneq ($(asan),)
 	CFLAGS+=-fsanitize=address
 	LIBS+=-fsanitize=address -ldl
