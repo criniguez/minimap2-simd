@@ -1,11 +1,11 @@
-# Minimap2-SIMD – Accelerated Fork with AVX2/AVX512 Architecture Support
+# Minimap2-SIMD – Accelerated Fork with SVE Architecture Support
 
-This repository is a fork of [minimap2 - V2.28](https://github.com/lh3/minimap2/), extended and optimized to support **X86 AVX2/AVX512 architecture**.  
+This repository is a fork of [minimap2 - V2.28](https://github.com/lh3/minimap2/), extended and optimized to support **ARM SVE architecture**.  
 
 ---
 
 ## What's New
-- Added SIMD support for AVX2/AVX512 instruction set
+- Added SIMD support for SVE instruction set
 - Optimized computational pipeline for faster execution
 - Improved compatibility with modern hardware
 
@@ -15,14 +15,14 @@ This repository is a fork of [minimap2 - V2.28](https://github.com/lh3/minimap2/
 
 ### 1. Prerequisites
 In addition to the prerequisites listed in the baseline repository [Install](#install) & [Developers' Guide](#dguide), you will need:
-- GCC compiler with AVX2/AVX512 support. 
-- Hardware supporting AVX2/AVX512 SIMD instruction set.
+- GCC/Clang compiler with SVE support. 
+- Hardware supporting SVE SIMD instruction set.
 
 ### 2. Installation
 ```bash
-git clone https://github.com/criniguez/minimap2-simd
+git clone https://github.com/criniguez/minimap2-simd -b sve-main
 cd minimap2-simd
-make all
+make neon=1 aarch64=1 sve=1
 ```
 
 ### 3. Usage
