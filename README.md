@@ -32,7 +32,7 @@ minimap2 -t <num_threads> -a <reference_genome> <input_fastq/fasta>
 ```
   
 ## Acknowledgments
-* Original work by Cristian Iñiguez [cristian.iniguez@bsc.es](mailto:cristian.iniguez@bsc.es), Quim Aguado-Puig, Lorién López-Villellas, Christos Matzoros, Pablo Ibáñez, Jesús Alastruey-Benedé, Juan Carlos Moure, Santiago Marco-Sola [santiago.marco@bsc.es](mailto:santiago.marco@bsc.es) & Miquel Moreto. 
+* Original work by Cristian Iñiguez [cristian.iniguez@bsc.es](mailto:cristian.iniguez@bsc.es), Quim Aguado-Puig, Lorién López-Villellas, Christos Matzoros, Pablo Ibáñez, Jesús Alastruey-Benedé, Juan Carlos Moure, Filippo Spiga, Santiago Marco-Sola [santiago.marco@bsc.es](mailto:santiago.marco@bsc.es) & Miquel Moreto. 
 * Supported by [BSC](https://www.bsc.es/), [UPC](https://www.fib.upc.edu/en) & [UNIZAR](https://www.unizar.es/) - providing resources and technical guidance.
 
 
